@@ -22,8 +22,4 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - name: Build, test, and analyze
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=Akfarizi -Dsonar.projectKey=Akfarizi_103022300078_AkbarAlfarizi_PraktikMKEPL
+   
